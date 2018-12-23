@@ -28,18 +28,24 @@ li {
 h1 {
     font: 36px Lato, sans-serif;
 }
-.footer {
+.footer1 {
     margin-top: 50px;
     text-align: center;
 }
-.firstFooter{
+.footer2, .footBorder {
+    visibility: hidden;
+}
+.firstFooter, .footBorder{
     border-top: 3px #6b949e solid;
     padding-top: 15px;
 }
 h2 {
     font: 16px Lato, sans-serif;
 }
-
+a:link, a:visited {
+    color: #000000;
+    text-decoration: none;
+}
 
 /*Index Page*/
 
@@ -116,10 +122,10 @@ h2 {
     background: #2c5b66;
     border-radius: 5px;
     height: 30px;
-    margin: 15px 30px 0px 0px;
     color: #fffef0;
     text-align: center;
     padding: 0;
+    margin-top: 15px;
 }
 .showtime:hover {
     background: #0f434f;
@@ -151,7 +157,7 @@ h2 {
 
 /*Breakpoint*/
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 576px) {
     
     .myNavbar {
         background: #6b949e;
@@ -175,9 +181,31 @@ h2 {
         text-align: center;
         height: 60px;
         line-height: 40px;
-        padding: 0px 10px;
+        padding: 0;
     }
     .allNavOption:hover {
         background: #2c5b66;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer1 {
+        display: none;
+    }
+    .footer2, .footBorder {
+        visibility: visible;
+        margin: 0;
+    }
+    .footBorder{
+        margin-top: 30px;
+    }
+    .footer2 h2 {
+        font: 18px Lato, sans-serif;
+        margin-bottom: 10px;
+    }
+    .footer2 p {
+        font: 16px Lato, sans-serif;
+        font-weight: 300;
+        margin-bottom: 5px;
     }
 }
