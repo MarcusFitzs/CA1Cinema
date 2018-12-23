@@ -1,0 +1,183 @@
+body {
+    background: #fffef0;
+}
+.myNavbar {
+    background: #6b949e;
+    padding: 0.5rem 0rem 0.5rem 1rem;
+}
+ul{
+    width: 85%;
+}
+.allNavOption {
+    height: 60px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+.allNavOption:hover {
+    background: #2c5b66;
+    }
+li {
+    font: 24px Lato, sans-serif;
+    font-weight: 300;
+}
+.logo {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+h1 {
+    font: 36px Lato, sans-serif;
+}
+.footer {
+    margin-top: 50px;
+    text-align: center;
+}
+.firstFooter{
+    border-top: 3px #6b949e solid;
+    padding-top: 15px;
+}
+h2 {
+    font: 16px Lato, sans-serif;
+}
+
+
+/*Index Page*/
+
+.mainContent {
+    margin-bottom: 30px;
+}
+.mainImage img {
+    box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 0 6px rgba(0,0,0,0.23);
+}
+
+
+/*Locations Page*/
+
+.locationHeading h1 {
+    width: auto;
+    float: left;
+}
+.secondary {
+    border-left: 2px #6b949e solid;
+    margin-left: 20px;
+    padding-left: 20px;
+    line-height: 30px;
+    margin-top: 8px;
+}
+.myBorder {
+    border-top: 2px #6b949e solid;
+    margin-top: 30px;
+}
+
+
+/*Showings Page*/
+
+.myCard {
+    box-shadow: 0 0 6px rgba(0,0,0,0.16), 0 0 6px rgba(0,0,0,0.23);
+    margin-bottom: 30px;
+}
+.poster {
+    background: #6b949e;
+}
+.cardBody {
+    background: #6b949e;
+}
+.cardInfo h1 {
+    font: 16px Lato, sans-serif;
+    padding: 10px 30px;
+}
+.cardInfo p {
+    font: 14px Lato, sans-serif;
+    padding: 0px 30px;
+    margin: 0;
+}
+.movieInfo {
+    background: #6b949e;
+    border-left: 3px #fffef0 solid;
+}
+.film {
+    font: 16px Lato, sans-serif;
+    text-align: center;
+    background: #fffef0;
+    height: 30px;
+    line-height: 30px;
+}
+.time {
+    font: 16px Lato, sans-serif;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 3px #fffef0 solid;
+    color: #fffef0;
+}
+.showtime {
+    background: #2c5b66;
+    border-radius: 5px;
+    height: 30px;
+    margin: 15px 30px 0px 0px;
+    color: #fffef0;
+    text-align: center;
+    padding: 0;
+}
+.showtime:hover {
+    background: #0f434f;
+}
+.showtime p {
+    font: 14px Lato, sans-serif;
+    line-height: 30px; /*to vertically center the text*/
+}
+
+
+/*Support Page*/
+.formDiv {
+	width: 100%;
+	float: left;
+	margin-bottom:1em;
+	clear: left;
+}
+.formButton {
+	text-align: center;
+}
+.inputButton {
+	color: #000000; /**Black**/
+	margin: 1em;
+}
+.thanks {
+    text-align: center;
+}
+
+
+/*Breakpoint*/
+
+@media screen and (min-width: 768px) {
+    
+    .myNavbar {
+        background: #6b949e;
+        width: 100%;
+        padding: 0;
+    }
+    
+    /*Keep group of nav options in center of bar*/
+    ul {
+        width: auto;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    /*Removed the default padding added by bootstrap in .myNavbar, now adding my own padding that works better with hover*/
+    .allNavOption {
+        border-bottom: none;
+        font: 24px Lato, sans-serif;
+        font-weight: 300;
+        width: auto;
+        text-align: center;
+        height: 60px;
+        line-height: 40px;
+        padding: 0px 10px;
+    }
+    .allNavOption:hover {
+        background: #2c5b66;
+    }
+}
